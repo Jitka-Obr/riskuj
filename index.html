@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Moje první webová stránka</title>
+</head>
+<body>
+
+  <h1>Připraveni?</h1>
+  <p>Stačí jen znát odpověď a být nejrychlejší.</p>
+
+</body>
+</html>
+
+<script>
+  function ukazZpravu() {
+    alert("Kliknutí funguje!");
+  }
+</script>
+
+<button onclick="ukazZpravu()">Klikni mě</button>
+<h2>Přihlášení</h2>
+<form onsubmit="zobrazUvitani(); return false;">
+  <input type="text" id="jmeno" placeholder="Zadej své jméno">
+  <button type="submit">Přihlásit se</button>
+</form>
+
+<script>
+  function zobrazUvitani() {
+    const jmeno = document.getElementById('jmeno').value;
+    alert("Vítej, " + jmeno + "!");
+  }
+</script>
+
